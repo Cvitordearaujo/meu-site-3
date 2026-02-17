@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #020617, #0f172a);
+            color: white;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+            animation: aparecer 1s ease;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #cbd5f5;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #38bdf8;
+            color: #020617;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+            transform: scale(1.05);
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Bem-vindo</h1>
+        <p>Clique abaixo para entrar no site</p>
+
+        <!-- LINK PARA ENTRAR -->
+        <a href="home.html" class="btn">Entrar no Site</a>
+    </div>
+</body>
+</html>
